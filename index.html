@@ -10,7 +10,7 @@
 </head>
 <body class=" mt-5">
     <header>
-        <nav class="flex justify-between items-center max-w-[1400px] mx-auto my-5">
+        <nav class="grid-cols-1 sm:flex justify-between items-center max-w-[1400px] mx-auto my-5">
             <div class="flex gap-2 items-center">
                 <img class="size-12 " src="B12-A5-Emergency-Hotline/assets/logo.png" alt="">
                 <h1 class="text-[#006747] text-lg font-extrabold">Emargency <br> Service</h1>
@@ -18,10 +18,10 @@
             <div class="flex gap-5">
                 <div class="flex border-1 rounded-full p-5 w-20 h-5 items-center">
                     <h1 class="font-bold mx-2">0</h1>
-                    <img class="size-6" src="B12-A5-Emergency-Hotline/assets/heart.png" alt="">
+                    <img id="heart-count" class="size-6" src="B12-A5-Emergency-Hotline/assets/heart.png" alt="">
                 </div>
                 <div class="flex  border-1 rounded-full p-5 w-20 h-5 items-center">
-                    <h1 class="font-bold">100</h1>
+                    <h1 id="" class="font-bold"><span id="available-blnc">100</span></h1>
                     <img class="size-6" src="B12-A5-Emergency-Hotline/assets/coin.png" alt="">
                 </div>
                 <div class="flex border-1 p-5 rounded-full w-20 h-5 items-center text-white bg-[#00A63E] gap-2">
@@ -39,26 +39,25 @@
         </div>
     </header>
     <main>
-        <section class= "grid grid-cols-4 grid-rows-3 gap-4 mt-5">
+        <section class= "sm:grid grid-cols-1 md:grid grid-cols-4 grid-rows-3 gap-4 mt-5">
            
             <div class="shadow-2xl border-gray-300 p-5">
                  <div class="flex justify-between">
                     <img class="size-10 bg-[#FFF1E2] p-2 rounded-lg" src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="">
-                    <button><i class="fa-regular fa-heart"></i></button>
+                    <button class="" id="heart-button"><i class="cursor-pointer fa-regular fa-heart"></i></button>
                     <!-- <img class="size-6" src="https://img.icons8.com/?size=48&id=86721&format=png" alt=""> -->
                 </div>
-                   <div>
-                    <h1 class="text-2xl font-bold">National Emergency Number</h1>
+                   <div id="title-1">
+                    <h1 class="text-xl font-bold">National Emergency Number</h1>
                    <p class="text-gray-700">National Emergency</p>
                    </div>
                    <div class="mt-5">
                     <h1 class="text-3xl font-bold">999</h1>
                     <h1 class="p-5 w-15 h-4 flex justify-center rounded-full items-center text-gray-500 bg-gray-200">All</h1>
                    </div>
-                   <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
-
-                   
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                  
+                     <button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button> 
+                   <button  class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                </div>
               <!-- police -->
@@ -81,7 +80,7 @@
                  <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
                  </div>
 
                </div>
@@ -104,15 +103,15 @@
                    <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                </div>
 
                <!-- card -->
-                     <div class="p-5 row-span-3 bg-white flex flex-col justify-between">
+                     <div class="sm:row-span-3 md:p-5 row-span-3 bg-white flex flex-col justify-between">
                            <!-- call histroy -->
-                <div class="flex justify-between items-center">
-                <h1 class=""><i class="fa-regular fa-clock"></i>Call History</h1>
+                <div class="sm:grid grid-cols-1 md:flex justify-between items-center">
+                <h1 class=""><i class="fa-regular fa-clock"></i> Call History</h1>
                  <button><button class="w-20 h-8 p-5 rounded-full bg-green-800 text-white btn btn-outline border-gray-300 text-gray-600">Clear</button>
 
                 
@@ -139,7 +138,7 @@
                    <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                </div>
 
@@ -151,7 +150,7 @@
                     <!-- <img class="size-6" src="https://img.icons8.com/?size=48&id=86721&format=png" alt=""> -->
                 </div>
                    <div>
-                    <h1 class="text-2xl font-bold">Women & Children Helpline</h1>
+                    <h1 class="text-xl font-bold">Women & Children Helpline</h1>
                    <p class="text-gray-700">Women & Children Helpline</p>
                    </div>
                    <div class="mt-5">
@@ -161,7 +160,7 @@
                    <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                </div>
 
@@ -184,7 +183,7 @@
                    <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                </div>
                <!-- electrycity -->
@@ -206,7 +205,7 @@
                    <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                </div>
                <!-- brac -->
@@ -227,7 +226,7 @@
                    <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                </div>
                <!-- railway -->
@@ -239,7 +238,7 @@
                     <!-- <img class="size-6" src="https://img.icons8.com/?size=48&id=86721&format=png" alt=""> -->
                 </div>
                    <div>
-                    <h1 class="text-2xl font-bold">Bangladesh Railway Helpline</h1>
+                    <h1 class="text-xl font-bold">Bangladesh Railway Helpline</h1>
                    <p class="text-gray-700">Bangladesh Railway</p>
                    </div>
                    <div class="mt-5">
@@ -249,14 +248,11 @@
                    <button><button class="w-35 h-8 mt-5 btn btn-outline border-gray-300 text-gray-600"><i class="fa-regular fa-copy"></i>Copy</button>
 
                    
-                   <button class="w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                   <button class="call-btn w-35 h-8 mt-5 btn btn-outline bg-green-800 text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
-               </div>
-
-                     <!-- card -->
-                    
-            </div>
+               
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
